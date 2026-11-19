@@ -1,0 +1,50 @@
+{
+ "_comment": "Example only: three invented entries showing the shape. The real register is ASSET-REGISTER.json (git-ignored); asset-intake.mjs writes it. Hashes here are of the strings \"example-asset-<id>\", not of real files.",
+ "assets": [
+  {
+   "id": 1,
+   "title": "Brick wall 1K (example)",
+   "kind": "texture",
+   "file": "sources/textures/example-brick-wall-1k.zip",
+   "sha256": "fd0e6de607b774aaaf4d9cdb7e014c003ba614b03f0460b01e8c94bce034bac5",
+   "bytes": 1048576,
+   "source": "https://example.org/assets/brick-wall",
+   "author": "Example Author",
+   "license": "CC0-1.0",
+   "credit": false,
+   "ships": "yes",
+   "note": "Placeholder entry.",
+   "added": "2026-01-01"
+  },
+  {
+   "id": 2,
+   "title": "Walk cycle pack (example)",
+   "kind": "anim",
+   "file": "sources/anim/example-walk-pack.zip",
+   "sha256": "a5b10a9006f6ebb68f8b9e81c85b5a6d1bf0f32737fc3f57a597dd01e66e0523",
+   "bytes": 2097152,
+   "source": "https://example.org/animations/walk-pack",
+   "author": "Example Studio",
+   "license": "Mixamo",
+   "credit": false,
+   "ships": "baked",
+   "note": "Raw files never ship; only baked clips do.",
+   "added": "2026-01-01"
+  },
+  {
+   "id": 3,
+   "title": "ui_click.ogg (example)",
+   "kind": "audio",
+   "file": "sources/audio/ui_click.ogg",
+   "sha256": "a2f781f74f60f2d1ee2eb06d35809e7bd98cfebcedc3b2c42ae441740f93cfaa",
+   "bytes": 4096,
+   "source": "https://example.org/in-house/ui_click",
+   "author": "in-house",
+   "license": "OWN",
+   "credit": false,
+   "ships": "yes",
+   "note": "jsfxr preset, seed 3.",
+   "added": "2026-01-01"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "common": {
+    "highpassHz": 80,
+    "denoise": "afftdn=nr=8:nf=-45",
+    "lufs": -18,
+    "tp": -1.5,
+    "bitrate": "36k"
+  },
+  "profiles": {
+    "deep-gruff": {
+      "note": "gruff veteran: pitch -2 st, formants -1.5 st (bigger body), warm low shelf, dull top, stone-room echo",
+      "semitones": -2,
+      "formantSemitones": -1.5,
+      "eq": [
+        "lowshelf=f=180:g=3",
+        "equalizer=f=3500:t=q:w=1:g=-2",
+        "lowpass=f=9000"
+      ],
+      "reverb": "aecho=0.9:0.88:55|95|150:0.22|0.14|0.08"
+    },
+    "bright-high": {
+      "note": "a lower voice shifted up: pitch +3.5 st, formants +2 st so it is not chipmunk and not simply pitched up, bright EQ, dry",
+      "semitones": 3.5,
+      "formantSemitones": 2,
+      "eq": [
+        "highpass=f=140",
+        "equalizer=f=3200:t=q:w=1:g=3",
+        "highshelf=f=6500:g=3"
+      ]
+    },
+    "tired-hard": {
+      "note": "tired and hard: pitch -1 st, slight grit, compressed and tight, no room",
+      "semitones": -1,
+      "formantSemitones": 0,
+      "eq": [
+        "highpass=f=110",
+        "equalizer=f=2200:t=q:w=1:g=2"
+      ],
+      "saturate": "volume=6dB,asoftclip=type=tanh",
+      "post": [
+        "acompressor=threshold=-24dB:ratio=3:attack=5:release=80"
+      ]
+    },
+    "young-thin": {
+      "note": "young and thin: pitch +2 st, formants +1 st, thin low end, bright",
+      "semitones": 2,
+      "formantSemitones": 1,
+      "eq": [
+        "highpass=f=170",
+        "equalizer=f=3000:t=q:w=1:g=2",
+        "lowshelf=f=250:g=-3"
+      ]
+    }
+  }
+}

@@ -1,0 +1,102 @@
+# Dependencies and portable tool binaries (ffmpeg, gltfpack, Blender, venvs, gh, uv ...)
+node_modules/
+bin/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Your own asset register and logs stay local (copy ASSET-REGISTER.example.json to start one)
+ASSET-REGISTER.json
+ROUNDS.csv
+LEARNINGS.md
+voice-work/
+*.log
+
+# Unreal Engine local files
+Saved/
+Intermediate/
+DerivedDataCache/
+Binaries/
+*.sln
+.vs/
+Config/*User*.ini
+Build/*/
+.ue-lock/
+.ue-heavy-lock/
+.e2e-lock/
+
+# Android signing
+*.keystore
+*.jks
+signing.properties
+local.properties
+*password*
+
+# Secrets and environment
+.env
+.env.*
+*.pem
+*.key
+*.dpapi
+*.token
+tokens
+tokens/
+
+# Raw and licensed assets: never commit these (Mixamo, Megascans/Fab, MetaHuman, Rokoko, Sketchfab ...)
+# Models, animation and scenes
+*.fbx
+*.uasset
+*.umap
+*.glb
+*.gltf
+*.bin
+*.blend
+*.blend1
+*.obj
+*.abc
+*.bvh
+*.mhmat
+*.mhclo
+# Textures and images
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.tga
+*.exr
+*.hdr
+*.dds
+*.ktx
+*.ktx2
+*.psd
+*.tif
+*.tiff
+# Audio and video
+*.wav
+*.mp3
+*.ogg
+*.opus
+*.flac
+*.m4a
+*.aac
+*.mp4
+*.mov
+# Voice and ML models
+*.onnx
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.ct2
+# Archives and installers
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.apk
+*.aab
+*.exe
+*.dll
